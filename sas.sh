@@ -6,13 +6,6 @@ echo " the massu bossu pathuko......"
 
 ls -lt
 
-echo "madhurai veeran nane"
-
 echo "fine"
 
 echo "madhurai veeran nane"
-ls -ltr ./
-
-cat $(pwd)/sas.sh
-
-
