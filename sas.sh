@@ -12,6 +12,4 @@ echo "madhurai veeran nane"
 
 echo "new rebase"
 
-M1
-T1
-T2
+Newt1
