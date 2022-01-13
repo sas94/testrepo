@@ -4,7 +4,6 @@ echo " i am sathish"
 
 echo " the massu bossu pathuko......"
 
-ls -ltr ./
+ls -lt
 
-
-
+echo "madhurai veeran nane"
