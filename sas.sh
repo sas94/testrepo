@@ -6,6 +6,5 @@ echo " the massu bossu pathuko......"
 
 ls -ltr ./
 
-cat $(pwd)/sas.sh
 
 
