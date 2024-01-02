@@ -1,0 +1,17 @@
+pipeline {
+   agent any
+   triggers { 
+     upstream(
+      threshold: hudson.model.Result.SUCCESS,
+      upstreamProjects: "/fr-payment-batch-build/${env.CHANGE_ID.replaceAll('refs/tags/', '').replaceAll('/', '%2F')}"
+	  )
+	  }
+
+	  stages {
+	       stage('hello') {
+		      steps {
+			      echo 'hello world'
+				 }
+			}
+		}
+	}
