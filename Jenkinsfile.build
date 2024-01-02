@@ -10,7 +10,7 @@ pipeline {
     post {
         success {
             script {
-                def downstreamJobName = "/fr-payment-batch-deploy/" + env.BRANCH_NAME.replaceAll("/", "%2F")
+                def downstreamJobName = "/batch-deploy/" + env.BRANCH_NAME.replaceAll("/", "%2F")
                 build job: downstreamJobName
             }
         }
