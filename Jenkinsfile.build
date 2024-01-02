@@ -10,10 +10,7 @@ pipeline {
     post {
         success {
             script {
-                // Construct downstream job name based on the branch name
                 def downstreamJobName = "/fr-payment-batch-deploy/" + env.BRANCH_NAME.replaceAll("/", "%2F")
-                
-                // Trigger downstream job
                 build job: downstreamJobName
             }
         }
