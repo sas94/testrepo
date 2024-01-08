@@ -9,9 +9,8 @@ pipeline {
 		}
     post {
         success {
-            script {
-                build job: "/batch-deploy/" + env.BRANCH_NAME.replaceAll("/", "%2F")
-            }
+           build job: "/batch-deploy/" + env.BRANCH_NAME.replaceAll("/", "%2F")
+            
         }
      }
 }
